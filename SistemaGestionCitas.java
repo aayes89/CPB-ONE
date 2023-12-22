@@ -1,6 +1,23 @@
 package sistemacitas;
 
 import java.util.*;
+class PuertoEntrada{
+private String nameP;
+private int cantMaxP;
+public PuertoEntrada(){}
+
+public void setNameP(String name){
+this.nameP=name;
+}
+public void setCantP(int cantT){
+this.cantMaxP=cantT;
+}
+public String getNameP(){
+return this.nameP;
+}
+public int getCantT(){
+return this.cantMaxP;
+}
 
 public class SistemaGestionCitas {
     private Map<Integer, List<String>> grupos = new HashMap<>();
